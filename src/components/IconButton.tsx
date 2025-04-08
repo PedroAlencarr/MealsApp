@@ -12,7 +12,7 @@ function IconButton({ icon, color, onPress }: IconButtonProps) {
   const [pressedColor, setPressedColor] = useState(color);
 
   function pressHandler() {
-    setPressedColor((prev) => (prev === color ? "yellow" : color));
+    setPressedColor((prev) => (prev === color ? color : color));
     onPress();
   }
 
